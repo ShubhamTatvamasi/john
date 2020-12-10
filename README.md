@@ -8,11 +8,23 @@
 [![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/shubhamtatvamasi/john)](https://hub.docker.com/r/shubhamtatvamasi/john)
 
 
-
+for development
 ```bash
 docker run -it --rm \
   --entrypoint sh \
   -v ${PWD}:/home \
   -w /home \
+  -v ${PWD}/john-config:/root/.john \
   shubhamtatvamasi/john
 ```
+
+final process
+```bash
+docker run -it --rm \
+  -w /home \
+  -v ${PWD}:/home \
+  -v ${PWD}/john-config:/root/.john \
+  shubhamtatvamasi/john walletbackup.hashes
+```
+
+
