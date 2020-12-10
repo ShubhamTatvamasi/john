@@ -6,3 +6,13 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/shubhamtatvamasi/john)](https://hub.docker.com/r/shubhamtatvamasi/john)
 [![MicroBadger Layers (tag)](https://img.shields.io/microbadger/layers/shubhamtatvamasi/john/latest)](https://hub.docker.com/r/shubhamtatvamasi/john)
 [![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/shubhamtatvamasi/john)](https://hub.docker.com/r/shubhamtatvamasi/john)
+
+
+
+```bash
+docker run -it --rm \
+  --entrypoint sh \
+  -v ${PWD}:/home \
+  -w /home \
+  shubhamtatvamasi/john
+```
